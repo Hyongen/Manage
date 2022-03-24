@@ -187,14 +187,19 @@ main .banner h2{
     letter-spacing: -0.005em;
     color: #FFFFFF;
 }
-main .cta_getStarted{
+main .cta_getStarted2{
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border:none;
+    border-radius: 50px;
+    padding: 12.5px 30.5px;
     background-color: white;
     font-weight: 500;
     font-size: 13.1806px;
     line-height: 19px;
     color:#F3603B;
+    transition: 0.3s;
 }
-main .cta_getStarted:hover{
+main .cta_getStarted2:hover{
     opacity: 1;
     color:white;
     background-color: #323851;
