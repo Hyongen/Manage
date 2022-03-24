@@ -1,5 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* -------------------------------------------------------- HEADER */ 
+header {
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    padding: 75px 165px;
+}
+header ul li{
+    list-style: none;
     
+    display: inline-block;
+    padding-left: 20px;
+}
+header ul li a{
+    color: #242E52;
+    text-decoration: none;
+    transition: 0.3s;
+}
+header ul li a:hover{
+    color: #F3603B;
+}
+.cta_getStarted{
+    color:white;
+    background: #F3603B;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border:none;
+    border-radius: 50px;
+    padding: 12.5px 30.5px;
+    transition: 0.3s;
+}
+.cta_getStarted:hover{
+    opacity:0.8;
+}
+
+/* -------------------------------------------------------- MAIN_Hero*/
+main .hero{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 165px;
+    gap: 130px;
+}
+main .hero div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:28px;
+}
+main .hero h2{
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    color: #232C50;
+}
+main .hero p{
+    font-weight: 500;
+    font-size: 16.5584px;
+    color: #000000;
+}
+
+/* -------------------------------------------------------- MAIN_About Us*/
+main .aboutUs{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:125px;
+    padding:100px 165px 0 165px;
+}
+main .aboutUs .description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap:28px;
+}
+main .aboutUs .description h3{
+    font-weight: 700;
+    font-size: 36px;
+    color: #232851;
+}
+main .aboutUs .description p{ 
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
+}
+
+main .aboutUs .itemlist{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:27px;
+}
+main .aboutUs .itemlist .item{
+    display:flex;
+    align-items: flex-start;
+    gap:18px
+}
+main .aboutUs .itemlist .item span{
+    background: #F3603B;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding: 10px 25px;
+}
+main .aboutUs .itemlist .item h4{  
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -0.015em;
+    color: #323851;
+    padding-bottom: 18px;
+
+}
+main .aboutUs .itemlist .item p{
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+    color: #B3B2B7;
+}
+
+/* -------------------------------------------------------- MAIN_Testimony*/
+main .testimony{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 125px 70px 0 70px;
+}
+main .testimony h3{
+    font-weight: 700;
+    font-size: 39.2143px;
+    line-height: 156.6%;
+    letter-spacing: -0.01em;
+    color: #242E53;
+    padding-bottom: 75px;
+}
+main .testimony .cardlist{
+    display: flex;
+    gap:29px;
+    padding-bottom: 45px;
+}
+main .testimony .cardlist .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:21px;
+}
+main .testimony .cardlist .card h5{
+    font-weight: 700;
+    font-size: 16.0714px;
+    line-height: 156.6%;
+    letter-spacing: -0.01em;
+    color: #3F4868;
+}
+main .testimony .cardlist .card p{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 156.6%;
+    color: #B9B9C1;
+    text-align: center;
+}
+
+/* -------------------------------------------------------- MAIN_Banner*/
+main .banner{
+    margin-top: 180px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:64px 165px;
+    background-color: #F3613C;
+    background-image: url("../img/bg-simplify-section-desktop.svg")
+}
+main .banner h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+}
+main .cta_getStarted{
+    background-color: white;
+    font-weight: 500;
+    font-size: 13.1806px;
+    line-height: 19px;
+    color:#F3603B;
+}
+main .cta_getStarted:hover{
+    opacity: 1;
+    color:white;
+    background-color: #323851;
+}
+
+/* -------------------------------------------------------- FOOTER*/
+footer{
+    display:flex;
+    justify-content: space-between;
+    padding: 52px 165px;
+    background-color: #1E1E26;
+}
+footer .iconList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+footer ul li a{
+    font-weight: 400;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+footer ul li a:hover{
+    color: #F3603B;
+}
+footer .form_copy{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .form_copy form input{
+    background: #FFFFFF;
+    border-radius: 50px;
+    padding:12.5px 50px 12.5px 10px;
+    border:none;
+}
+footer .form_copy form input:focus{
+    outline: none;
+}
+footer .form_copy form button{
+    background: #F3603B;
+    border-radius: 50px;
+    padding:12.5px 22px;
+    border:none;
+    color: white;
+    transition: 0.3s;
+}
+footer .form_copy form button:hover{
+    background: #f3785a;
+}
+footer .form_copy p{
+    font-weight: 500;
+    font-size: 12.5px;
+    line-height: 18px;
+    color: #8C8C94;
 }
