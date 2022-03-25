@@ -20,9 +20,8 @@ header {
 }
 header ul li{
     list-style: none;
-    
     display: inline-block;
-    padding-left: 20px;
+    padding: 0 10px;
 }
 header ul li a{
     color: #242E52;
