@@ -4,14 +4,20 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
-}
-main{
-    background-image: url("../img/bg-tablet-pattern.svg");
-    background-repeat: no-repeat;
-}
+}  
 body{
     max-width: 100%;
     overflow-x: hidden;
+    background-image: url("../img/bg-tablet-pattern.svg"), url("../img/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: left 110% bottom 110%, right 150% top 65%;
+}
+@media (max-width:375px) {
+    body{
+        background-size: 55vh;
+        background-position: right 150% bottom 102%, right 400% bottom 85%;
+    }
+    
 }
 
 /* -------------------------------------------------------- HEADER */ 
@@ -229,7 +235,7 @@ main .testimony h3{
 }
 main .testimony .cardlist{
     display: flex;
-    gap:29px;
+    gap:30px;
     padding-bottom: 45px;
 }
 main .testimony .cardlist .card{
@@ -237,19 +243,25 @@ main .testimony .cardlist .card{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:21px;
+    background-color: #FAFAFA;
+    gap:20px;
+    padding-bottom: 40px;
+}
+main .testimony .cardlist .card img{
+   position: relative;
+   max-width: 70px;
+   bottom: 35px;
 }
 main .testimony .cardlist .card h5{
     font-weight: 700;
-    font-size: 16.0714px;
-    line-height: 156.6%;
+    font-size: 16px;
+    line-height: 155%;
     letter-spacing: -0.01em;
     color: #3F4868;
 }
 main .testimony .cardlist .card p{
     font-weight: 500;
-    font-size: 16px;
-    line-height: 156.6%;
+    line-height: 155%;
     color: #B9B9C1;
     text-align: center;
 }
@@ -261,7 +273,17 @@ main .testimony .cardlist .card p{
     main .testimony h3{
         text-align: center;
         font-size: 32px;
-        padding-bottom: 20px;
+        padding-bottom: 40px;
+    }
+    main .testimony .cardlist{
+        padding-top: 30px;
+    }
+    main .testimony .cardlist .card{
+        gap: 0;
+    }
+    main .testimony .cardlist .card img{
+        max-width: 100px;
+        bottom: 50px;
     }
     main .testimony .cardlist .card:nth-of-type(1){
         display:none;
@@ -402,7 +424,6 @@ footer>p{
     right: 165px;
     bottom: 50px;
 }
-
 @media (max-width:375px) {
     footer{
         padding: 50px 10px;
