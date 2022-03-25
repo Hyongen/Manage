@@ -62,7 +62,6 @@ main .hero h2{
 }
 main .hero p{
     font-weight: 500;
-    font-size: 16.5584px;
     color: #000000;
 }
 
@@ -87,7 +86,6 @@ main .aboutUs .description h3{
 }
 main .aboutUs .description p{ 
     font-weight: 500;
-    font-size: 16px;
     color: #000000;
 }
 
@@ -106,7 +104,6 @@ main .aboutUs .itemlist .item span{
     background: #F3603B;
     border-radius: 30px;
     font-weight: 700;
-    font-size: 16px;
     line-height: 23px;
     color: #FFFFFF;
     padding: 10px 25px;
@@ -122,7 +119,6 @@ main .aboutUs .itemlist .item h4{
 }
 main .aboutUs .itemlist .item p{
     font-weight: 500;
-    font-size: 16.2984px;
     line-height: 26px;
     letter-spacing: -0.01em;
     color: #B3B2B7;
@@ -137,8 +133,8 @@ main .testimony{
 }
 main .testimony h3{
     font-weight: 700;
-    font-size: 39.2143px;
-    line-height: 156.6%;
+    font-size: 40px;
+    line-height: 155%;
     letter-spacing: -0.01em;
     color: #242E53;
     padding-bottom: 75px;
@@ -194,7 +190,7 @@ main .cta_getStarted2{
     padding: 12.5px 30.5px;
     background-color: white;
     font-weight: 500;
-    font-size: 13.1806px;
+    font-size: 14px;
     line-height: 19px;
     color:#F3603B;
     transition: 0.3s;
