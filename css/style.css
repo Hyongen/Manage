@@ -213,6 +213,8 @@ footer .iconList{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    font-size: 16px;
+    cursor: pointer;   
 }
 footer ul{
     list-style: none;
@@ -223,7 +225,6 @@ footer ul{
 }
 footer ul li a{
     font-weight: 400;
-    font-size: 16px;
     color: white;
     text-decoration: none;
     transition: 0.3s;
