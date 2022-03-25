@@ -18,10 +18,13 @@ header {
     align-items: center;
     padding: 75px 165px;
 }
+header ul{
+    display:flex;
+    gap:28px;
+}
 header ul li{
     list-style: none;
     display: inline-block;
-    padding: 0 10px;
 }
 header ul li a{
     color: #242E52;
