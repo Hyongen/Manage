@@ -9,7 +9,10 @@ main{
     background-image: url("../img/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
 }
-
+body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 
 /* -------------------------------------------------------- HEADER */ 
 header {
@@ -322,59 +325,63 @@ main .cta_getStarted2:hover{
 
 /* -------------------------------------------------------- FOOTER*/
 footer{
-    display:flex;
-    justify-content: space-between;
     padding: 52px 165px;
     background-color: #1E1E26;
+    position: relative;
 }
-footer .iconList{
+footer .container{
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer .container .iconList{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
-    font-size: 16px;
-    cursor: pointer;
+    gap:50px;
 }
-footer .iconList i{
+footer .container .iconList i{
     color: white;
     font-size: 24px;
     transition: 0.3s;
 }
-footer .iconList i:hover{
+footer .container .iconList i:hover{
     color: #F3603B;
 }
-footer ul{
+footer .linkList{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap:50px;
+}
+footer .linkList ul{
     list-style: none;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+    padding: 0;
 }
-footer ul li a{
+footer .linkList ul li a{
     font-weight: 400;
     color: white;
     text-decoration: none;
     transition: 0.3s;
 }
-footer ul li a:hover{
+footer .linkList ul li a:hover{
     color: #F3603B;
 }
-footer .form_copy{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-footer .form_copy form input{
+footer form input{
     background: #FFFFFF;
     border-radius: 50px;
     padding:12.5px 50px 12.5px 10px;
     border:none;
 }
-footer .form_copy form input:focus{
+footer form input:focus{
     outline: none;
 }
-footer .form_copy form button{
+footer form button{
     background: #F3603B;
     border-radius: 50px;
     padding:12.5px 22px;
@@ -382,17 +389,60 @@ footer .form_copy form button{
     color: white;
     transition: 0.3s;
 }
-footer .form_copy form button:hover{
+footer form button:hover{
     background: #f3785a;
 }
-footer .form_copy p{
+
+footer>p{
     font-weight: 500;
     font-size: 12.5px;
     line-height: 18px;
     color: #8C8C94;
+    position:absolute;
+    right: 165px;
+    bottom: 50px;
 }
+
 @media (max-width:375px) {
     footer{
+        padding: 50px 10px;
+        display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap:20px;
+    }
+    footer .container{
+        flex-direction: column;
+        align-items: center;
+        gap:20px;
+    }
+    footer .container .iconList{
+        order: 3;
+        flex-direction: column-reverse;
+    }
+    footer .container .iconList img{
+        width: 80%;
+    }
+    footer .container .iconList>div{
+        display: flex;
+        gap:30px
+    }
+    footer .container .iconList i{
+        font-size: 32px;
+    }
+    footer .container .linkList{
+        width: 100%;
+        padding: 30px;
+        order: 2;
+    }
+    footer .container form{
+        align-items: center;
+        order: 1;
+    }
+    footer>p{
+        position: relative;
+        right:initial;
+        bottom:initial;
     }
 }
