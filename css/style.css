@@ -5,6 +5,11 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+main{
+    background-image: url("../img/bg-tablet-pattern.svg");
+    background-repeat: no-repeat;
+}
+
 
 /* -------------------------------------------------------- HEADER */ 
 header {
@@ -328,13 +333,13 @@ footer .iconList{
     font-size: 16px;
     cursor: pointer;
 }
-footer .iconList div>img{
-    display: flex;
-    gap: 5px;
+footer .iconList i{
+    color: white;
+    font-size: 24px;
+    transition: 0.3s;
 }
-
-footer .iconList div>img:hover{
-    fill:#F3603B;    
+footer .iconList i:hover{
+    color: #F3603B;
 }
 footer ul{
     list-style: none;
