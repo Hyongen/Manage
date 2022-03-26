@@ -265,6 +265,9 @@ main .testimony .cardlist .card p{
     color: #B9B9C1;
     text-align: center;
 }
+main .testimony .puntos{
+    display:none;
+}
 @media (max-width:375px) {
     main .testimony{
         padding: 0 10px;
@@ -277,9 +280,11 @@ main .testimony .cardlist .card p{
     }
     main .testimony .cardlist{
         padding-top: 30px;
+        padding-bottom: 20px;
     }
     main .testimony .cardlist .card{
         gap: 0;
+        padding-bottom: 20px;
     }
     main .testimony .cardlist .card img{
         max-width: 100px;
@@ -293,6 +298,15 @@ main .testimony .cardlist .card p{
     }
     main .testimony button{
         display:block;
+    }
+    main .testimony .puntos{
+        display:flex;
+        gap:5px;
+        padding-bottom: 20px;
+    }
+    main .testimony .puntos i{
+        font-size: 10px;
+        color:#F3603B
     }
 }
 
