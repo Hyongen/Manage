@@ -15,9 +15,8 @@ body{
 @media (max-width:375px) {
     body{
         background-size: 55vh;
-        background-position: right 150% bottom 102%, right 400% bottom 85%;
+        background-position: left 120px bottom 102%, left 300px bottom 85%;
     }
-    
 }
 
 /* -------------------------------------------------------- HEADER */ 
@@ -55,7 +54,7 @@ header ul li a:hover{
 .cta_getStarted:hover{
     opacity:0.8;
 }
-header .bars{
+header i{
     display:none;
 }
 
@@ -76,9 +75,9 @@ header .bars{
         display:  none;
         transition: none;
     }
-    header .bars{
+    header i{
         display: block;
-        max-height: 24px;
+        font-size: 24px;
     }
 }
 
@@ -163,29 +162,33 @@ main .aboutUs .itemlist{
     align-items: center;
     gap:27px;
 }
-main .aboutUs .itemlist .item{
+main .aboutUs .itemlist div{
     display:flex;
+    flex-direction: column;
     align-items: flex-start;
-    gap:18px
+    gap:18px;
+    counter-increment: item;
 }
-main .aboutUs .itemlist .item span{
-    background: #F3603B;
-    border-radius: 30px;
-    font-weight: 700;
-    line-height: 23px;
-    color: #FFFFFF;
-    padding: 10px 25px;
-}
-main .aboutUs .itemlist .item h4{  
+main .aboutUs .itemlist h4{  
     font-weight: 700;
     font-size: 16px;
     line-height: 23px;
     letter-spacing: -0.015em;
     color: #323851;
     padding-bottom: 18px;
-
 }
-main .aboutUs .itemlist .item p{
+main .aboutUs .itemlist h4::before{ 
+    content: counter(item);
+    background: #F3603B;
+    border-radius: 30px;
+    font-weight: 700;
+    line-height: 23px;
+    color: #FFFFFF;
+    padding: 10px 25px;
+    margin-right: 23px;
+}
+
+main .aboutUs .itemlist p{
     font-weight: 500;
     line-height: 26px;
     letter-spacing: -0.01em;
@@ -210,11 +213,19 @@ main .aboutUs .itemlist .item p{
         line-height: 1.7;
     }
     main .aboutUs .itemlist{
-        padding: 10px;
+        padding: 10px 0 10px 10px;
         gap: 50px;
     }
-    main .aboutUs .itemlist .item h4{
+    main .aboutUs .itemlist h4{
         padding-bottom: 10px;
+        width: 100%;
+        background-color: #f3603b18;
+        padding-top:10px;
+        border-top-left-radius:30px;
+        border-bottom-left-radius:30px;
+    }
+    main .aboutUs .itemlist p{
+        padding-right: 10px;
     }
 }
 
