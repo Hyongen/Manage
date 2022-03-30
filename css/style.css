@@ -3,20 +3,13 @@
 *{
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;  
 }  
 body{
     max-width: 100%;
-    overflow-x: hidden;
     background-image: url("../img/bg-tablet-pattern.svg"), url("../img/bg-tablet-pattern.svg");
     background-repeat: no-repeat;
     background-position: left 110% bottom 110%, right 150% top 65%;
-}
-@media (max-width:375px) {
-    body{
-        background-size: 55vh;
-        background-position: left 120px bottom 102%, left 300px bottom 85%;
-    }
 }
 
 /* -------------------------------------------------------- HEADER */ 
@@ -54,33 +47,9 @@ header ul li a:hover{
 .cta_getStarted:hover{
     opacity:0.8;
 }
-header i{
+header div{
     display:none;
 }
-
-@media (max-width:375px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 30px 20px;
-    }
-    header ul{
-        display: none;
-    }
-    header ul li a{
-        transition: none;
-    }
-    .cta_getStarted{
-        display:  none;
-        transition: none;
-    }
-    header i{
-        display: block;
-        font-size: 24px;
-    }
-}
-
 
 /* -------------------------------------------------------- MAIN_Hero*/
 main .hero{
@@ -105,31 +74,6 @@ main .hero h2{
 main .hero p{
     font-weight: 500;
     color: #B3B2B7;
-}
-
-@media (max-width:375px) {
-    main .hero{
-        flex-direction: column-reverse;
-        padding: 30px;
-        gap:0px
-    }
-    main .hero img{
-        width: 120%;
-    }
-    main .hero div{
-        text-align: center;
-        align-items: center;
-    }
-    main .hero h2{
-        font-size: 36px;
-    }
-    main .hero p{
-        line-height: 1.7;
-    }
-    main .hero .cta_getStarted{
-        display: block;
-        text-align: center;
-    }
 }
 
 /* -------------------------------------------------------- MAIN_About Us*/
@@ -160,13 +104,12 @@ main .aboutUs .itemlist{
     display:flex;
     flex-direction: column;
     align-items: center;
-    gap:27px;
+    gap:20px;
 }
 main .aboutUs .itemlist div{
     display:flex;
     flex-direction: column;
     align-items: flex-start;
-    gap:18px;
     counter-increment: item;
 }
 main .aboutUs .itemlist h4{  
@@ -189,44 +132,11 @@ main .aboutUs .itemlist h4::before{
 }
 
 main .aboutUs .itemlist p{
+    padding-left:78px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: -0.01em;
     color: #B3B2B7;
-}
-
-@media (max-width:375px) {
-    main .aboutUs{
-        flex-direction: column;
-        margin-top:75px;
-        padding: 0;
-        gap:10px;
-    }
-    main .aboutUs .description{
-        padding:10px 30px;
-        text-align: center;
-    }
-    main .aboutUs .description h3{
-        font-size: 32px;
-    }
-    main .aboutUs .description p{
-        line-height: 1.7;
-    }
-    main .aboutUs .itemlist{
-        padding: 10px 0 10px 10px;
-        gap: 50px;
-    }
-    main .aboutUs .itemlist h4{
-        padding-bottom: 10px;
-        width: 100%;
-        background-color: #f3603b18;
-        padding-top:10px;
-        border-top-left-radius:30px;
-        border-bottom-left-radius:30px;
-    }
-    main .aboutUs .itemlist p{
-        padding-right: 10px;
-    }
 }
 
 /* -------------------------------------------------------- MAIN_Testimony*/
@@ -279,47 +189,6 @@ main .testimony .cardlist .card p{
 main .testimony .puntos{
     display:none;
 }
-@media (max-width:375px) {
-    main .testimony{
-        padding: 0 10px;
-        margin-top:75px;
-    } 
-    main .testimony h3{
-        text-align: center;
-        font-size: 32px;
-        padding-bottom: 40px;
-    }
-    main .testimony .cardlist{
-        padding-top: 30px;
-        padding-bottom: 20px;
-    }
-    main .testimony .cardlist .card{
-        gap: 0;
-        padding-bottom: 20px;
-    }
-    main .testimony .cardlist .card img{
-        max-width: 100px;
-        bottom: 50px;
-    }
-    main .testimony .cardlist .card:nth-of-type(1){
-        display:none;
-    }
-    main .testimony .cardlist .card:nth-of-type(3){
-        display:none;
-    }
-    main .testimony button{
-        display:block;
-    }
-    main .testimony .puntos{
-        display:flex;
-        gap:5px;
-        padding-bottom: 20px;
-    }
-    main .testimony .puntos i{
-        font-size: 10px;
-        color:#F3603B
-    }
-}
 
 /* -------------------------------------------------------- MAIN_Banner*/
 main .banner{
@@ -352,23 +221,6 @@ main .cta_getStarted2{
 }
 main .cta_getStarted2:hover{
     color:#f3603bab;
-}
-
-@media (max-width:375px) {
-    main .banner{
-        flex-direction: column;
-        padding: 75px 10px;
-        gap: 30px;
-        background-image: url("../img/bg-simplify-section-mobile.svg");
-        background-repeat: no-repeat;
-    }
-    main .banner h2{
-        text-align: center;
-        font-size: 32px;
-    }
-    main .banner h2 br{
-        display:none;
-    }
 }
 
 /* -------------------------------------------------------- FOOTER*/
@@ -450,7 +302,154 @@ footer>p{
     right: 165px;
     bottom: 50px;
 }
+
+
 @media (max-width:375px) {
+    body{
+        background-size: 55vh;
+        background-position: left 120px bottom 102%, left 300px bottom 85%;
+    }
+    /* -------------------------------------------------------- HEADER */ 
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 20px;
+    }
+    header ul{
+        display: none;
+    }
+    header ul li a{
+        transition: none;
+    }
+    .cta_getStarted{
+        display:  none;
+        transition: none;
+    }
+    header div{
+        display: block;
+        font-size: 24px;
+    }
+
+    /* -------------------------------------------------------- MAIN_Hero*/
+    main .hero{
+        flex-direction: column-reverse;
+        padding: 30px;
+        gap:0px
+    }
+    main .hero img{
+        width: 120%;
+    }
+    main .hero div{
+        text-align: center;
+        align-items: center;
+    }
+    main .hero h2{
+        font-size: 36px;
+    }
+    main .hero p{
+        line-height: 1.7;
+    }
+    main .hero .cta_getStarted{
+        display: block;
+        text-align: center;
+    }
+
+    /* -------------------------------------------------------- MAIN_About Us*/
+    main .aboutUs{
+        flex-direction: column;
+        margin-top:75px;
+        padding: 0;
+        gap:10px;
+    }
+    main .aboutUs .description{
+        padding:10px 30px;
+        text-align: center;
+    }
+    main .aboutUs .description h3{
+        font-size: 32px;
+    }
+    main .aboutUs .description p{
+        line-height: 1.7;
+    }
+    main .aboutUs .itemlist{
+        padding: 10px 0 10px 10px;
+        gap: 50px;
+    }
+    main .aboutUs .itemlist div{
+        gap: 10px;
+    }
+    main .aboutUs .itemlist h4{
+        padding-bottom: 10px;
+        width: 100%;
+        background-color: #f3603b18;
+        padding-top:10px;
+        border-top-left-radius:30px;
+        border-bottom-left-radius:30px;
+    }
+    main .aboutUs .itemlist p{
+        padding-right: 10px;
+        padding-left: 0;
+    }
+
+    /* -------------------------------------------------------- MAIN_Testimony*/
+    main .testimony{
+        padding: 0 10px;
+        margin-top:75px;
+    } 
+    main .testimony h3{
+        text-align: center;
+        font-size: 32px;
+        padding-bottom: 40px;
+    }
+    main .testimony .cardlist{
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+    main .testimony .cardlist .card{
+        gap: 0;
+        padding-bottom: 20px;
+    }
+    main .testimony .cardlist .card img{
+        max-width: 100px;
+        bottom: 50px;
+    }
+    main .testimony .cardlist .card:nth-of-type(1){
+        display:none;
+    }
+    main .testimony .cardlist .card:nth-of-type(3){
+        display:none;
+    }
+    main .testimony button{
+        display:block;
+    }
+    main .testimony .puntos{
+        display:flex;
+        gap:5px;
+        padding-bottom: 20px;
+    }
+    main .testimony .puntos i{
+        font-size: 10px;
+        color:#F3603B
+    }
+
+    /* -------------------------------------------------------- MAIN_Banner*/
+    main .banner{
+        flex-direction: column;
+        padding: 75px 10px;
+        gap: 30px;
+        background-image: url("../img/bg-simplify-section-mobile.svg");
+        background-repeat: no-repeat;
+    }
+    main .banner h2{
+        text-align: center;
+        font-size: 32px;
+    }
+    main .banner h2 br{
+        display:none;
+    }
+    
+    /* -------------------------------------------------------- FOOTER*/
     footer{
         padding: 50px 10px;
         display: flex;
