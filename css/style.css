@@ -52,6 +52,9 @@ header ul li a:hover{
 header div{
     display:none;
 }
+header div i{
+    color: #232C50;
+}
 
 /* -------------------------------------------------------- MAIN_Hero*/
 main .hero{
