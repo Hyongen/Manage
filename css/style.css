@@ -33,6 +33,7 @@ header ul li a{
     transition: 0.3s;
 }
 header ul li a:hover{
+    cursor: pointer;
     color: #F3603B;
 }
 .cta_getStarted{
@@ -45,6 +46,7 @@ header ul li a:hover{
     transition: 0.3s;
 }
 .cta_getStarted:hover{
+    cursor: pointer;
     opacity:0.8;
 }
 header div{
@@ -220,6 +222,7 @@ main .cta_getStarted2{
     transition: 0.3s;
 }
 main .cta_getStarted2:hover{
+    cursor: pointer;
     color:#f3603bab;
 }
 
@@ -247,6 +250,7 @@ footer .container .iconList i{
     transition: 0.3s;
 }
 footer .container .iconList i:hover{
+    cursor: pointer;
     color: #F3603B;
 }
 footer .linkList{
@@ -270,6 +274,7 @@ footer .linkList ul li a{
     transition: 0.3s;
 }
 footer .linkList ul li a:hover{
+    cursor: pointer;
     color: #F3603B;
 }
 footer form input{
@@ -290,6 +295,7 @@ footer form button{
     transition: 0.3s;
 }
 footer form button:hover{
+    cursor: pointer;
     background: #f3785a;
 }
 
